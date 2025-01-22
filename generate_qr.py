@@ -1,7 +1,7 @@
 import qrcode
 
 # URL de votre menu
-url = "https://hazemch12.github.io/menu_skifa"
+url = "https://hazemch12.github.io/menu_skifa/"
 
 # Générer le QR Code
 qr = qrcode.QRCode(
