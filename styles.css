@@ -1,37 +1,84 @@
+/* Définition des couleurs principales */
+:root {
+    --primary-color: #D68A2C;  /* Couleur dorée */
+    --secondary-color: #3E3A32; /* Couleur foncée pour le texte */
+    --background-color: #F9F3E5; /* Couleur beige claire */
+    --highlight-color: #F1D18A; /* Couleur d'accent */
+}
+
+/* Styles globaux */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #e7c8a3, #d48d33); /* Gradient from beige to orange */
-    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/wood-pattern.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
     margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Menu principal */
+.menu {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2em;
+    border-bottom: 2px solid var(--highlight-color);
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+/* Liste des articles */
+ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.menu-container {
-    padding: 20px;
+ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #fff;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajout d'hover pour les éléments du menu */
+ul li:hover {
+    background-color: var(--highlight-color);
+    cursor: pointer;
+}
+
+/* Section de footer (si besoin) */
+footer {
     text-align: center;
-    color: #fff; /* White text color for contrast */
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 0;
+    margin-top: 40px;
 }
 
-h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.section {
-    margin: 20px 0;
-}
-
-.section h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.section p {
-    font-size: 1.2em;
+footer p {
+    font-size: 1em;
+    margin: 0;
 }
